@@ -1,7 +1,9 @@
 public class loops {
     public static void main(String[] args) {
-        for (int i = 1; i <= 1000000000; i++) {
-            System.out.println(i*1);
+        for(int i = 1; i <=10;i++){
+            if(i>5){
+                System.out.println(i);
+            }
         }
     }
 }
