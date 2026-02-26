@@ -13,6 +13,10 @@ public class fxn {
         int mmmmm = a*b;
         return mmmmm;
     }
+    public static float remind(float a, float b){
+        float dd = a%b;
+        return dd;
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         /*System.out.print("enter a : ");
@@ -30,12 +34,20 @@ public class fxn {
         float divi = damn(c,d);
         System.out.println(divi); */
 
-        System.out.print("enter e = ");
+        /*  System.out.print("enter e = ");
         int e = sc.nextInt();
         System.out.print("enter f =");
         int f = sc.nextInt();
         int mnmnm = mul(e,f);
-        System.out.println(mnmnm);
+        System.out.println(mnmnm);  */
+
+
+        System.out.println("enter g =");
+        float g = sc.nextFloat();
+        System.out.println("enter h = ");
+        float h = sc.nextFloat();
+        float opopopopopopopopopopopopopopopopopopopopo = remind(g,h);
+        System.out.println(opopopopopopopopopopopopopopopopopopopopo);
 
     }
 }
