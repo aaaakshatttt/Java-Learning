@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+import java.util.Scanner;
 public class pr2 {
     public static void main(String[] args) {
        /* for (int i = 1;i<=5;i++){
@@ -20,7 +22,7 @@ public class pr2 {
             System.out.println();
 
         }*/
-         for (int i = 1;i<=5;i++){
+        /* for (int i = 1;i<=5;i++){
              if (i ==1 || i == 5){
                  for (int j = 1;j<=5;j++){
                      System.out.print("*");
@@ -39,6 +41,14 @@ public class pr2 {
 
              }
 
-         }
+         }*/
+        Scanner sc = new Scanner(System.in);
+        System.out.print("enetr a: ");
+        int a = sc.nextInt();
+        System.out.println();
+        System.out.print("enter b: ");
+
+        int b = sc.nextInt();
+        System.out.println("multipling a with b gives "+ a*b);
     }
 }
