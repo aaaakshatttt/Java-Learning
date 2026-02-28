@@ -18,6 +18,16 @@ public class q3 {
         }
         System.out.println();
     }
+
+    //check prime
+    public static void prime(int d){
+        if (d%1==0 && d%d==0 && (d%2!=0 || d%3!=0 || d%5!=0 || d%7!=0 )){
+            System.out.print("prime");
+        }
+        else {
+            System.out.println("not prime");
+        }
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         /*int number = sc.nextInt();
@@ -25,7 +35,7 @@ public class q3 {
         System.out.println(z);*/
 
         int num = sc.nextInt();
-        tabe(num);
+        prime(num);
 
 
 
