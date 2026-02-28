@@ -4,9 +4,14 @@ public class questions {
         float meean = (a+b+c)/3;
         return meean;
     }
+    public static String printname(String name){
+        System.out.println(name);
+        return name;
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a : ");
+       /* System.out.println("Enter a : ");
         float a = sc.nextFloat();
         System.out.println("enter b = ");
         float b = sc.nextFloat();
@@ -14,5 +19,9 @@ public class questions {
         float c = sc.nextFloat();
         float z = mean(a,b,c);
         System.out.println(z);
-    }
+ */
+        String a = sc.next();
+        String z = printname(a);
+
+}
 }
