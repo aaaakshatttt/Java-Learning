@@ -1,14 +1,12 @@
 import java.util.Scanner;
 public class q3 {
    //fxn to check even odd
-    public static String evenodd(int n){
+    public static void evenodd(int n){
         if (n%2==0){
-            String a = "even";
-            return a;
+            System.out.println("even");
         }
         else{
-            String b = "odd";
-            return b;
+            System.out.println("odd");
         }
     }
 //fxn to primt table
@@ -16,7 +14,7 @@ public class q3 {
         for (int i = 1;i<=10;i++){
             System.out.println(n + " x " + i + " = " + i*n);
         }
-        System.out.println();
+
     }
 
     //check prime
@@ -30,12 +28,12 @@ public class q3 {
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        /*int number = sc.nextInt();
-        String z = evenodd(number);
-        System.out.println(z);*/
+        int number = sc.nextInt();
+        evenodd(number);
 
-        int num = sc.nextInt();
-        prime(num);
+
+        //int num = sc.nextInt();
+       //tabe(num);
 
 
 
