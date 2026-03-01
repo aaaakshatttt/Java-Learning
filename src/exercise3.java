@@ -6,11 +6,18 @@ public class exercise3 {
         double cir = teo*pi*n;
         return cir;
     }
+    public static void area(double n){
+        double pi = 3.14;
+        double aera = pi*n*n;
+        System.out.println(aera);
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        double radius = sc.nextDouble();
+        /*double radius = sc.nextDouble();
         double circumference = circum(radius);
-        System.out.println(circumference);
+        System.out.println(circumference);*/
+
+        area(4);
 
 
 
