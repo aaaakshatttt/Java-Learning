@@ -1,9 +1,8 @@
 public class array {
     public static void main(String[] args) {
-        int[] arr = new int[3];
-        arr[0]= 3;
-        arr[1] = 2345;
-        arr[2] = 123;
-        System.out.println(arr[2]);
+        int[] arr = {2,3,4,4,5,6,67,7,8,8,9,9,9};
+        for (int i = 0;i<13;i++){
+            System.out.print(arr[i]);
+        }
     }
 }
