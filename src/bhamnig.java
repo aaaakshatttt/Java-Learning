@@ -1,24 +1,54 @@
 import java.util.Scanner;
 public class bhamnig {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        for (int i = 1;i<=5;i++){
-            if (i == 1 || i == 5){
-                for (int j = 1;j<=5;j++){
-                    System.out.print("* ");
-                }
-                System.out.println();
-            } else if (i == 2 || i == 3|| i == 4) {
-                for (int k = 1;k<=5;k++){
-                    if (k == 1|| k == 5){
-                        System.out.print("* ");
-                    }
-                    else{
-                        System.out.print("  ");
-                    }
-                }
-                System.out.println();
+    public static void sum(int a,int b){
+        int z = a+b;
+        System.out.println(z);
+    }
+    public static void table(int n){
+        for (int i = 1;i<=12;i++){
+            System.out.println( n + " X " + i + " = " + n*i);
+        }
+    }
+    public static void fac(int m){
+        int z = 1;
+        for (int i = m;i>=1;i--){
+            z = z * i;
+        }
+        System.out.println(z);
+    }
+    public static void eo(int n){
+        if (n % 2 == 0){
+            System.out.println("even");
+        } else {
+            System.out.println("odd");
+        }
+    }
+    public static void mean(float a,float b,float c){
+        float d = (a+b+c)/3;
+        System.out.println(d);
+    }
+    public static void puw(int z,int y){
+        int k = 1;
+        for (int i =1;i<=y;i++){
+            k = k*z;
+
+        }
+        System.out.println(k);
+    }
+    public static void evvsum(int n){
+        int k = 0;
+        for (int i = 1;i<=n;i++){
+            if (i % 2 == 0){
+                k = k+ i;
             }
         }
+        System.out.println(k);
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int m = sc.nextInt();
+        int n = sc.nextInt();
+        evvsum(m);
+
     }
 }
