@@ -46,9 +46,17 @@ public class bhamnig {
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int m = sc.nextInt();
-        int n = sc.nextInt();
-        evvsum(m);
+        System.out.println("input array size = ");
+        int size = sc.nextInt();
+        int[] arr = new int[size];
 
+        for (int i = 0;i<size;i++){
+            System.out.println("vales of arr pos" + i );
+            arr[i] = sc.nextInt();
+        }
+
+        for (int j = 0;j<size;j++){
+            System.out.println(arr[j]);
+        }
     }
 }
