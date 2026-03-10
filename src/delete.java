@@ -1,25 +1,12 @@
 import java.util.Scanner;
 public class delete {
-    public static void square(int n){
-        System.out.println(n*n);
-    }
-    public static void eod(int n){
-        if (n % 2 == 0){
-            System.out.println("even");
-        } else if (n % 2 != 0) {
-            System.out.println("odd");
-
-        }
-        else System.out.println("zero");
-    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("enter range = ");
-        int a = sc.nextInt();
-        int z = 0;
-        for (int i = 1;i<=a;i++){
-            z = z+i;
-        }
-        System.out.println(z);
+       for (int i = 1;i<=5;i++){
+           for (int j = 1;j<=5;j++){
+               System.out.print("*");
+           }
+           System.out.println();
+       }
     }
 }
