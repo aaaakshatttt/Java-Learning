@@ -14,7 +14,12 @@ public class delete {
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.println("enter range = ");
         int a = sc.nextInt();
-        eod(a);
+        int z = 0;
+        for (int i = 1;i<=a;i++){
+            z = z+i;
+        }
+        System.out.println(z);
     }
 }
