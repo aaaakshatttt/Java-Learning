@@ -1,8 +1,23 @@
+import java.util.Scanner;
 public class array {
     public static void main(String[] args) {
-        int[] arr = {2,3,4,4,5,6,67,7,8,8,9,9,9};
-        for (int i = 0;i<13;i++){
-            System.out.print(arr[i]);
+        Scanner sc = new Scanner(System.in);
+
+        while(true) {
+            int a = sc.nextInt();
+            if (a == 0) {
+                System.out.println("zerp");
+            } else if (a%2 == 0 && a>0) {
+                System.out.println("even & positive");
+            } else if (a%2!=0 && a>0){
+                System.out.println("odd & positive");
+            }
+            else if (a%2==0 && a<0){
+                System.out.println("even & negative");
+            }
+            else {
+                System.out.println("negative & odd");
+            }
         }
     }
 }
