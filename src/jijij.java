@@ -2,12 +2,27 @@ import java.util.Scanner;
 public class jijij {
     public static void main(String[] args) {
        Scanner sc = new Scanner(System.in);
-       int x = 8;
-       int[] arr = {2,4,8,3,0,5};
-       for (int i = 0;i<6;i++){
-           if (arr[i] == x){
-               System.out.println("mkc found at "+i);
-           }
-       }
+        System.out.println("enter dimentiponas");
+        int rows = sc.nextInt();
+        int columns = sc.nextInt();
+        int[][] arr = new int[rows][columns];
+
+        for (int i = 0;i<rows;i++){
+            if (i == 0){
+                for (int j = 0;j<columns;j++){
+                    arr[i][j] = sc.nextInt();
+                }
+            } else if (i == 1) {
+                for (int j = 0;j<columns;j++){
+                    arr[i][j] = sc.nextInt();
+                }
+            } else if ( i == 2) {
+                for (int j = 0;j<columns;j++){
+                    arr[i][j] = sc.nextInt();
+
+                }
+
+            }
+        }
     }
 }
