@@ -1,24 +1,19 @@
+import java.util.Scanner;
 public class jijij {
     public static void main(String[] args) {
-        for (int i = 1;i<=5;i++){
-            if (i == 1 || i == 5){
-                for (int j = 1;j<=5;j++){
-                    System.out.print("*");
-                }
-                System.out.println();
-            } else if (i == 2||i==3||i==4) {
-                for (int j = 1;j<=5;j++){
-                    if (j==1||j==5){
-                        System.out.print("*");
-                    }
-                    else{
-                        System.out.print(" ");
+       Scanner sc = new Scanner(System.in);
+        System.out.print("enter array size = ");
+        int size = sc.nextInt();
+        int[] arr = new int[size];
 
-                    }
-                }
-                System.out.println();
 
-            }
+        for (int i = 0;i<size;i++){
+            System.out.println("enter value of array block " + i);
+            arr[i] = sc.nextInt();
+        }
+
+        for (int i = 0;i<size;i++){
+            System.out.println(arr[i]);
         }
     }
 }
