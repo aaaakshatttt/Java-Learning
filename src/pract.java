@@ -3,14 +3,25 @@ import java.util.*;
 public class pract {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        float[] arr = {3,6,19,7,13,45};
-        float n = arr.length;
-        float sum = 0;
+        System.out.println("enter rows");
+        int rows = sc.nextInt();
+        System.out.println("enter columns ");
+        int columns = sc.nextInt();
 
-        for (int i = 0;i<arr.length;i++){
-            sum = sum + arr[i];
+        int[][] arr = new int[rows][columns];
+
+        for (int i = 0;i<rows;i++){
+            for (int j = 0;j<columns;j++){
+                System.out.println("enter value of row " + i + "and column " + j + " = " );
+                arr[i][j] = sc.nextInt();
+            }
         }
 
-        System.out.println(sum/n);
+        for (int i = 0;i<rows;i++){
+            for (int j = 0;j<columns; j++){
+                System.out.print(arr[i][j]+ " ");
+            }
+            System.out.println();
+        }
         }
     }
