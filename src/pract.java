@@ -16,12 +16,13 @@ public class pract {
                 arr[i][j] = sc.nextInt();
             }
         }
-
-        for (int i = 0;i<rows;i++){
-            for (int j = 0;j<columns; j++){
-                System.out.print(arr[i][j]+ " ");
+        int x = 23;
+        for (int i =0;i<rows;i++){
+            for (int j = 0;j<columns;j++){
+                if (arr[i][j] == x){
+                    System.out.println("found at " + i + " " + j);
+                }
             }
-            System.out.println();
         }
         }
     }
